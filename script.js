@@ -25,6 +25,15 @@ $(function () {
 
     localStorage.setItem(timeBlockId, eventDescription);
   });
+
+  $(".time-block").each(function () {
+    var timeBlockId = $(this).attr("id");
+    var savedEvent = localStorage.getItem(timeBlockId);
+
+    if (savedEvent) {
+      $(this).find(".description").val(savedEvent);
+    }
+  });
 });
 
 
