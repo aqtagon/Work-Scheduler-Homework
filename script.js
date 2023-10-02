@@ -18,6 +18,13 @@ $(function () {
       $(this).addClass("future");
     }
   });
+  
+  $(".savBtn").on("click", function () {
+    var timeBlockId = $(this).parent().attr("id");
+    var eventDescription = $(this).siblings(".description").val();
+
+    localStorage.setItem(timeBlockId, eventDescription);
+  });
 });
 
 
