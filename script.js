@@ -19,7 +19,7 @@ $(function () {
     }
   });
   
-  $(".savBtn").on("click", function () {
+  $(".saveBtn").on("click", function () {
     var timeBlockId = $(this).parent().attr("id");
     var eventDescription = $(this).siblings(".description").val();
 
