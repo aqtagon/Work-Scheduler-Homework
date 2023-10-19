@@ -18,7 +18,7 @@ The goal of this assignment was to create a calendar application for a regular 9
 
 #### Result
 - See Workday Planner Website here:
-- Preview: ![Work-Scheduler Homework](Images/Screenshot 2023-10-19 at 4.24.56 PM.png)
+- Preview: ![Work-Scheduler Homework](<Images/Screenshot 2023-10-19 at 4.24.56 PM.png>)
 - Website: [Link](https://aqtagon.github.io/Work-Scheduler-Homework/)
 
 Note: Used google and chatgpt for questions
