@@ -1,6 +1,6 @@
 
 $(function () {
-  var currentDay = dayjs().format("dddd, MMMM D")
+  var currentDay = dayjs().format("dddd, MMMM D");
   $("#currentDay").text(currentDay);
 
   var currentHour = dayjs().hour();
