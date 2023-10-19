@@ -8,6 +8,7 @@ $(function () {
   $(".time-block").each(function () {
     var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
+
     if (blockHour < currentHour) {
       $(this).removeClass("present future").addClass("past");
     } else if (blockHour === currentHour) {
@@ -16,6 +17,10 @@ $(function () {
       $(this).removeClass("past present").addClass("future");
     }
   });
+
+  if (currentHour >= 17) {
+    $(".time-block.future").removeClass("future").addClass("past");
+  }
   
   $(".saveBtn").on("click", function () {
     var timeBlockId = $(this).parent().attr("id");
